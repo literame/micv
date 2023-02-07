@@ -1,0 +1,88 @@
+/* 
+*{
+    
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: white;
+  }
+  
+#contenedor{
+    height: 100%;
+    width: 100%;
+    padding: 10px 0;
+    background: white;
+}
+
+.ladoD {
+    border-radius: 0 10px 10px 0 ;
+    border: 1px solid cornflowerblue;
+    background-color: cornflowerblue;
+    width: 10%;
+    height: 95%;
+  } */
+  @font-face {
+    font-family: 'caliLight'; 
+    src: url('calibril.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'abadi';
+    src: url('abadyMT.otf') format('truetype');  
+  }
+
+  body {
+    margin: 0;
+    
+  }
+ 
+  .sidebar {
+    height: 100%;
+    width: 200px;
+    background-color: dodgerblue;
+    border-radius: 0 10px 10px 0 ;
+    border: 1px solid cornflowerblue;
+    position: fixed;
+    overflow: hidden;
+    color: white;
+  }
+  .content {
+    margin-left: 200px;
+    padding: 20px;
+    background: white;
+    
+  }
+
+   .content h2{
+    color: #2E74B5;
+    font-family: caliLight;
+    margin-left: 15px;
+
+  } 
+  
+  .content h4{
+    color: black;
+    font-family: abadi;
+    margin: 0;
+  }
+  .content h5{
+    color: lightslategray;
+    font-family: abadi;
+    margin: 0;
+  }
+ .perfil{
+    margin: 20px;
+    
+ }
+
+  .perfil img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50% 50%;
+
+  }
+
+ 
