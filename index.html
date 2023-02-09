@@ -4,46 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="floatIcons.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./source/css/style.css">
+    <link rel="stylesheet" href="./source/css/floatIcons.css">
+    <title>CURRICULUM</title>
 </head>
 <body>
-
+  <!-- lista de opciones del suscriptor-->
     <div class="sidebar">
-   
         <div class="perfil">
           <div class="foto">
-            <img src="perfil.png" alt="LUIS ALFREDO">
+            <img src="./source/imagen/perfil.png" alt="LUIS ALFREDO">
           </div>
-            
-            
-            
-            <a id="opt"  href="#Información">Información Personal</a> 
-            <a id="opt" href="#Experiencia">Experiencia Laboral</a> 
-            <a id="opt" href="#Historial">Historial Academico</a>
-            <a id="opt" href="#Habilidades">Habilidades</a>
-            
+            <a href="#Información">Información Personal</a> 
+            <a href="#Experiencia">Experiencia Laboral</a> 
+            <a href="#Historial">Historial Academico</a>
+            <a href="#Habilidades">Habilidades</a>
         </div>
     </div>
-    
+    <!-- fin de lista de opciones del suscriptor-->
+
+    <!--Contenido descripcion del suscriptor-->
     <div class="content">
     
-      <p class="usuario">CURRICULUM</p>
+    <p class="usuario">CURRICULUM</p>
+
+    <!--contenido Información Personal-->
     <div class="section">
-      <h2 id="Información">Información Personal</h2>
-      <p>Nombre: Luis Alfredo </p>
-      <p>Apellido: Palomino Medina</p>
-      <p>DNI: 70305513</p>
-      <p>Dirección: Urb. Santa cruz Mz A Lt 11 – Jirón Piura, Callao
-         – Ref: Parque N° 1 Santa Cruz
-        </p>
-      <p>Teléfono: <a class="numero" href="whatsapp://send?phone=+51948141925" title="ir a whatsapp">+51948141925</a></p>
-      <p>Correo Electrónico: <a class="correo" href="mailto:palominomedinal@gmail.com" title="enviar un correo">palominomedinal@gmail.com</a></p>
+      <h2 id="Información" class="estilo">Información Personal</h2>
+      <p class="consulta">Nombre:
+        <p class="datosSuscriptor"> Luis Alfredo</p>  
+      </p>
+      <p class="consulta">Apellido: 
+        <p class="datosSuscriptor"> Palomino Medina</p>
+      </p>
+      <p class="consulta">DNI: 
+        <p class="datosSuscriptor"> 70305513</p>
+      </p>
+      <p class="consulta">Dirección: 
+        <p class="datosSuscriptor">
+          Urb. Santa cruz Mz A Lt 11 – Jirón Piura, <br> Callao
+          – Ref: Parque N° 1 Santa Cruz
+        </p> 
+      </p>
+      <p class="consulta">Teléfono: 
+        <p class="datosSuscriptor"><a class="numero" href="whatsapp://send?phone=+51948141925" title="ir a whatsapp">+51948141925</a></p>
+      </p>
+      <p class="consulta">Correo Electrónico: 
+        <p class="datosSuscriptor"><a class="correo" href="mailto:palominomedinal@gmail.com" title="enviar un correo">palominomedinal@gmail.com</a></p>
+      </p>
     </div>
+    <!-- fin contenido Información Personal-->
 
     <div class="section">
-      <h2 id="Experiencia">Experiencia Laboral</h2>
+      <h2 id="Experiencia" class="estilo">Experiencia Laboral</h2>
       <section>
         <h4>
             ATENCION AL CLIENTE CALLCENTER
@@ -80,7 +93,7 @@
     </div>
 
     <div class="section">
-      <h2 id="Historial">Historial Academico</h2>
+      <h2 id="Historial" class="estilo">Historial Academico</h2>
         <section>
             <h4>SENATI - 2019</h4>
             <h5>Escuela de mantenimiento de maquinaria pesada | septiembre 2019 - octubre 2020</h5>
@@ -124,7 +137,7 @@
 </div>
 
     <div class="section">
-      <h2 id="Habilidades">Habilidades</h2>
+      <h2 id="Habilidades" class="estilo">Habilidades</h2>
       <p>Aquí puedes listar tus habilidades y conocimientos relevantes.</p>
     </div>
     
@@ -141,30 +154,32 @@
       <a  class="option-item" href="mailto:palominomedinal@gmail.com">
         <i class="fas fa-circle"></i>
       </a>
-      <a  class="option-item" href="whatsapp://send?phone=+51948141925>
+      <a  class="option-item" href="whatsapp://send?phone=+51948141925">
         <i class="fas"></i>
       </a>
-      <a href="https://github.com/literame" class="option-item" >
+      <a href="https://github.com/literame" target="_blank" class="option-item" >
         <i class="fas fa-circle"></i>
       </a>
     </div>
     
     
     
+
+    <!--codigo desplazamiento botonera-->
     <script>
       document.getElementById("options-btn").addEventListener("click", function() {
         var options = document.getElementById("options");
         options.style.transform = options.style.transform === "scale(1)" ? "scale(0)" : "scale(1)";
-      });
-            $(window).scroll(function() {
+            });
+      $(window).scroll(function() {
           $('.float-btn ').css({
             'bottom': 20 + $(window).scrollTop() + 'px'
           });
         });
-  
     </script>
   </body>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="index.js"></script>
+  <script src="./source/js/index.js"></script>
+  <script src="./source/js/floatbehavior.js"></script>
 </html>
