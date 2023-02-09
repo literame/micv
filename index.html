@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="floatIcons.css">
     <title>Document</title>
 </head>
 <body>
@@ -37,8 +38,8 @@
       <p>Dirección: Urb. Santa cruz Mz A Lt 11 – Jirón Piura, Callao
          – Ref: Parque N° 1 Santa Cruz
         </p>
-      <p>Teléfono: +51 948 141 925</p>
-      <p>Correo Electrónico: <a href="mailto:palominomedinal@gmail.com">palominomedinal@gmail.com</a></p>
+      <p>Teléfono: <a class="numero" href="whatsapp://send?phone=+51948141925" title="ir a whatsapp">+51948141925</a></p>
+      <p>Correo Electrónico: <a class="correo" href="mailto:palominomedinal@gmail.com" title="enviar un correo">palominomedinal@gmail.com</a></p>
     </div>
 
     <div class="section">
@@ -51,10 +52,11 @@
             ATENTO | De marzo de 2022 a enero 2023
           </h5>
           <ul>
-            <li>	Gestión de inconvenientes técnico móviles para MOVISTAR.
+            <li>	
+              <point class="point">•</point>	Gestión de inconvenientes técnico móviles para <strong>MOVISTAR</strong>.
             </li>
             <li>
-                    Modalidad home office.
+              <point class="point">•</point>	Modalidad home office.
             </li>
           </ul>
       </section>
@@ -66,10 +68,11 @@
             Multisistem | De enero de 2022 a febrero 2022
           </h5>
           <ul>
-            <li>	instalación de equipos de aire acondicionado. 
+            <li>	
+              <point class="point">•</point>	instalación de equipos de aire acondicionado. 
             </li>
             <li>
-                	Colaboré en el mantenimiento de equipos de refrigeración.
+              <point class="point">•</point>	Colaboré en el mantenimiento de equipos de refrigeración.
             </li>
           </ul>
       </section>
@@ -83,10 +86,10 @@
             <h5>Escuela de mantenimiento de maquinaria pesada | septiembre 2019 - octubre 2020</h5>
             <ul>
                 <li>
-                    	Curse estudios generales, culminándolos con éxito. 
+                  <point class="point">•</point>	Curse estudios generales, culminándolos con éxito. 
                 </li>
                 <li>
-                    	Debido a la pandemia y la situación social no continué en esta escuela de estudios.
+                  <point class="point">•</point>	Debido a la pandemia y la situación social no continué en esta escuela de estudios.
                 </li>
             </ul>
         </section>
@@ -95,7 +98,7 @@
             <h4>ERP ESCUELA DE REFRIGERACION DEL PERU - 2022  </h4>
             <h5>Instalación de equipos del aire acondicionado | diciembre 2021 - enero 2022</h5>
             <ul>
-                <li>	Realice el curso de instalación con éxito, titulándome en esta área.</li>
+                <li>	<point class="point">•</point>	Realice el curso de instalación con éxito, titulándome en esta área.</li>
 
             </ul>
         </section>
@@ -105,9 +108,17 @@
             <h5>Computacion e informatica | Desde: Agosto 2022 - en curso</h5>
             <ul>
                <li>
-                	Realice el curso de instalación con éxito, titulándome en esta área.
-               </li> 
-        
+                  <point class="point">•</point>	Actualmente curso estudios en informática.
+                </li> 
+                <li>
+                  <point class="point">•</point>	estudie los conceptos básicos del desarrollo de software. 
+                </li>
+                <li>
+                  <point class="point">•</point>	trabaje con los lenguajes de programación: java, Python. 
+                </li>
+                <li>
+                  <point class="point">•</point>	realice proyecto de desarrollo web usando HTML y CSS.
+                </li>
             </ul>
         </section>
 </div>
@@ -118,6 +129,40 @@
     </div>
     
     </div>
+
+
+
+
+    <button class="float-btn" id="options-btn">
+      <i class="fas fa-ellipsis-v"></i>
+    </button>
+    
+    <div class="float-options" id="options">
+      <a href="#" class="option-item">
+        <i class="fas fa-circle"></i>
+      </a>
+      <a href="#" class="option-item">
+        <i class="fas"></i>
+      </a>
+      <a href="#" class="option-item">
+        <i class="fas fa-circle"></i>
+      </a>
+    </div>
+    
+    
+    
+    <script>
+      document.getElementById("options-btn").addEventListener("click", function() {
+        var options = document.getElementById("options");
+        options.style.transform = options.style.transform === "scale(1)" ? "scale(0)" : "scale(1)";
+      });
+            $(window).scroll(function() {
+          $('.float-btn ').css({
+            'bottom': 20 + $(window).scrollTop() + 'px'
+          });
+        });
+  
+    </script>
   </body>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

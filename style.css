@@ -57,7 +57,12 @@
     box-sizing: border-box;
  }
 
- 
+ .numero
+{
+  font-family: abadi;
+  
+}
+
 
  .usuario{
     
@@ -103,7 +108,7 @@
 
   }
   ul li{
-    list-style-type: circle;
+    list-style-type: none;
     
   }
 
@@ -111,4 +116,8 @@
     border-top: 1px solid #2E74B5;
     border-right: 1px solid #2E74B5;
     border-radius: 0 15px 0 0 ;
+  }
+
+  .point{
+    color: #2E74B5;
   }

@@ -9,10 +9,10 @@ $(document).ready(function() {
         $(".opt").animate({display: "block",fontsize:"22px"});
 
       } else {
-        $(".sidebar").animate({width: "80px"});
-        $(".content").animate({marginLeft: "80px"});
-        $(".perfil .foto img").animate({width: "50px",height: "50px"});
-        $(".opt").animate({display: "none",fontsize:"10px"});
+        // $(".sidebar").animate({width: "80px"});
+        // $(".content").animate({marginLeft: "80px"});
+        // $(".perfil .foto img").animate({width: "50px",height: "50px"});
+        // $(".opt").animate({display: "none",fontsize:"10px"});
 
       }
       isOpen = !isOpen;
