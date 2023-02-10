@@ -22,7 +22,7 @@
     height: 100%;
     width: 220px;
     background-color: dodgerblue;
-    border-radius: 0 10px 10px 0 ;
+    border-radius: 0 10px 0px 0 ;
     border: 1px solid cornflowerblue;
     position: fixed;
     overflow: hidden;
@@ -92,8 +92,8 @@
 
  .perfil a:hover{
   border-left: 5px solid white;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  /* border-top: 1px solid white;
+  border-bottom: 1px solid white; */
   background: #1a87ed; 
  }
  ul {
@@ -140,7 +140,7 @@
   .datosSuscriptor{
     color: black;
     margin: 0;
-    margin-left: 25px;
+    margin-left: 30px;
   }
 
   .estilo{

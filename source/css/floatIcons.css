@@ -1,7 +1,12 @@
 
+      
+
       .float-btn {
-        background-color: dodgerblue; 
-        
+        /* background-color: dodgerblue;  */
+        background-image: url('../imagen/cubit.png');
+        background-size: cover;
+        background-position: center;
+
         border: none;
         border-radius: 50%;
         height: 50px;
@@ -42,6 +47,8 @@
         text-decoration: none;
         color: #333;
       }
+      
+
       .option-item:nth-child(3){
         background-image: url('../imagen/git.png');
         background-size: cover;
